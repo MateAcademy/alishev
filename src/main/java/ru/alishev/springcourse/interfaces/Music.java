@@ -1,4 +1,4 @@
-package ru.alishev.springcourse;
+package ru.alishev.springcourse.interfaces;
 
 /**
  * @author Sergey Klunniy

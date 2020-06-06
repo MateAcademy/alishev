@@ -1,6 +1,5 @@
 package ru.alishev.springcourse;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -8,7 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class TestSpring {
     public static void main(String[] args) {
-        ApplicationContext context =
+        ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("applicationContext.xml");
 
 //        Music music = context.getBean("musicBeen", Music.class);
@@ -16,8 +15,10 @@ public class TestSpring {
 //        MusicPlayer musicPlayer = new MusicPlayer(music);
         MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
         musicPlayer.playMusic();
+        System.out.println(musicPlayer.getName());
+        System.out.println(musicPlayer.getVolume());
 
 
-        ((ClassPathXmlApplicationContext) context).close();
+        context.close();
     }
 }

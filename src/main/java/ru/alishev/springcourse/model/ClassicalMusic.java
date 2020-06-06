@@ -1,4 +1,6 @@
-package ru.alishev.springcourse;
+package ru.alishev.springcourse.model;
+
+import ru.alishev.springcourse.interfaces.Music;
 
 /**
  * @author Sergey Klunniy

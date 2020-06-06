@@ -1,22 +1,28 @@
 package ru.alishev.springcourse;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import ru.alishev.springcourse.interfaces.Music;
+
+import java.util.List;
+
 /**
  * @author Sergey Klunniy
  */
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class MusicPlayer {
-    private Music music;
 
-    public MusicPlayer(Music music) {
-        this.music = music;
-    }
-
-    public MusicPlayer () {}
+    private List<Music> music;
+    private String name;
+    private int volume;
 
     public void playMusic() {
-        System.out.println("Playing: " + music.getSong());
+        for (Music sing : music) {
+            System.out.println(sing.getSong());
+        }
     }
 
-    public void setMusic(Music music) {
-        this.music = music;
-    }
 }
