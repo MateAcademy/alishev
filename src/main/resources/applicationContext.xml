@@ -3,8 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="testBean"
-          class="ru.alishev.springcourse.TestBean" scope="prototype" >
-        <constructor-arg value="Sergey" />
+    <bean id="musicBeen"
+          class="ru.alishev.springcourse.RockMusic">
     </bean>
 </beans>
