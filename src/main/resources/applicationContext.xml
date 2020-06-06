@@ -15,13 +15,11 @@
     <bean id="popMusicBean" class="ru.alishev.springcourse.model.PopMusic"/>
     <bean id="rockMusicBean" class="ru.alishev.springcourse.model.RockMusic"/>
 
-
     <util:list id="myList" list-class="java.util.ArrayList" value-type="ru.alishev.springcourse.interfaces.Music">
         <ref bean="popMusicBean"/>
         <ref bean="rockMusicBean"/>
         <ref bean="classicalMusicBean"/>
     </util:list>
-
 
     <bean id="musicPlayer" class="ru.alishev.springcourse.MusicPlayer">
         <!--<constructor-arg ref="musicBeen" />-->

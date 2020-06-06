@@ -7,9 +7,12 @@
 .idea
 *.iml
 *.iws
+out
 
 # Mac
 .DS_Store
+.AppleDouble
+.LSOverride
 
 # Maven
 log/
@@ -38,3 +41,9 @@ target
 hs_err_pid*
 
 target
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
