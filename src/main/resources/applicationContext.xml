@@ -8,6 +8,7 @@
     </bean>
 
     <bean id="musicPlayer" class="ru.alishev.springcourse.MusicPlayer">
-        <constructor-arg ref="musicBeen" />
+        <!--<constructor-arg ref="musicBeen" />-->
+        <property name="music" ref="musicBeen" />
     </bean>
 </beans>
